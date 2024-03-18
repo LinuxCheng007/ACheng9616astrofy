@@ -4,7 +4,7 @@
   <defs>
     <linearGradient id="gradient" x1="16" x2="16" y1="32" y2="24" gradientUnits="userSpaceOnUse">
       <stop stop-color="#000"/>
-      <stop offset="1" stop-color="#000" stop-opacity="0"/>
+      <stop offset="1" stop-color="#2f7ddb" stop-opacity="0"/>
     </linearGradient>
   </defs>
 	<style>

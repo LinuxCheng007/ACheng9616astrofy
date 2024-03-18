@@ -11,26 +11,26 @@ const last_posts = posts.slice(0, 3);
 
 <BaseLayout sideBarActiveItemID="home">
   <div class="pb-12 mt-5">
-    <div class="text-xl py-1">Hey there 👋</div>
-    <div class="text-5xl font-bold">I'm Manuel Ernesto</div>
-    <div class="text-3xl py-3 font-bold">Software Engineer and Entrepreneur</div>
+    <div class="text-xl py-1">Hi 你好 👋</div>
+    <div class="text-5xl font-bold">我是 AChengLinux</div>
+    <div class="text-3xl py-3 font-bold">毕业大专生 & 打个人Online</div>
     <div class="py-2">
       <text class="text-lg">
-        This is <b>Astrofy</b> a free and open-source template for your Personal Portfolio Website built with Astro and TailwindCSS.
-        Create in minutes a website with Blog, CV, Project Section, Store and RSS Feed. I hope you find
-        it useful!
+        这是我的 <b>博客</b> 我喜欢与信息技术有关的一切事情，它给了我一个契机，用自己的双手创造一切有趣的事物。<br>
+        我会用 C++ 与 Python 写一些有意思的项目，偶尔也会想起以前打 OI 的时间， 不过都是往事了。<br>
+        学习文化课仍然是我的主要任务，有时，我会写一些学习笔记，尽管相较于纸质笔记来说没有什么用。<br>
       </text>
     </div>
     <div class="mt-8">
-      <a class="btn" href="https://twitter.com/manuelernestog" target="_blank"> Let's connect!</a>
-      <a href="https://github.com/manuelernestog/astrofy" target="_blank" class="btn btn-outline ml-5">
-        Get This template
+      <a class="btn" href="https://www.acheng9616.cloud/" target="_blank"> 网站主页</a>
+      <a href="https://www.acheng9616.cloud/about.html#/qa" target="_blank" class="btn btn-outline ml-5">
+        公告
       </a>
     </div>
   </div>
 
   <div>
-    <div class="text-3xl w-full font-bold mb-2">My last projects {"</>"}</div>
+    <div class="text-3xl w-full font-bold mb-2">项目进度.... </div>
   </div>
 
   <HorizontalCard
@@ -57,8 +57,9 @@ const last_posts = posts.slice(0, 3);
   />
 
   <div>
-    <div class="text-3xl w-full font-bold mb-5 mt-10">Latest from blog</div>
+    <div class="text-3xl w-full font-bold mb-5 mt-10">知识分享</div>
   </div>
+
 
   {
     last_posts.map((post) => (
