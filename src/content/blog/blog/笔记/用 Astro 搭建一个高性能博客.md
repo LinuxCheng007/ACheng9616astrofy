@@ -1,7 +1,7 @@
 ---
 title: "用 Astro 搭建一个高性能博客"
 description: "如何搭建个人博客，更加流畅使用个人博客"
-pubDate: "Sep 12 2022"
+pubDate: "mar 18 2024"
 heroImage: "/wz.webp"
 badge: "正式1.0"
 tags: ["程序","网站"]
