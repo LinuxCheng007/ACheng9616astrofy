@@ -1,4 +1,4 @@
-# AChengLinux | weibo
+# AChengLinux | WiKi
 
 ![Astrofy | Personal Porfolio Website Template](public/social_img.webp)
 
