@@ -110,12 +110,12 @@ tags: ["程序","网站"]
 <ol>
 <li>进入 <a href="https://vercel.com/">Vercel</a> 然后注册一个账号；</li>
 <li>新建一个项目；
-<img src="Astro01.png" alt=""></li>
+<img src="/Astro01.png" alt=""></li>
 <li>选择你刚刚创建的仓库（这里拿之前的举例子）；
-<img src="Astro02.png" alt=""></li>
+<img src="/Astro02.png" alt=""></li>
 <li>点击 <code>Deploy</code>；</li>
 <li>看到满屏的烟花了吗？你成功了！
-<img src="Astro03.png" alt=""></li>
+<img src="/Astro03.png" alt=""></li>
 </ol>
 <h2 id="可能遇到的问题">可能遇到的问题</h2>
 <ol>
