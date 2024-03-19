@@ -10,10 +10,10 @@ import HorizontalCard from "../components/HorizontalCard.astro";
 
   <HorizontalCard
     title="吐槽江村学车"
-    img="/post_img.webp"
+    img="/jiangcunxueche.png"
     desc="破驾校"
     badge="NEW"
-    url="/store/破驾校避雷.md"
+    url={"/store/" + createSlug(post.data.title, post.slug)}
   />
   <div class="divider my-0"></div>
   <HorizontalCard
