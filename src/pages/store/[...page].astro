@@ -10,7 +10,9 @@ export async function getStaticPaths({ paginate }) {
 }
 const { page } = Astro.props;
 ---
-
+<div>
+  <div class="text-3xl w-full font-bold mb-5">日常吐槽</div>
+</div>
 <BaseLayout title="Store" sideBarActiveItemID="store">
   <ul>
     {
