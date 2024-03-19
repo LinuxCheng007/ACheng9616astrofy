@@ -12,6 +12,9 @@ const { page } = Astro.props;
 ---
 
 <BaseLayout title="Store" sideBarActiveItemID="store">
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">日常吐槽</div>
+  </div>
   <ul>
     {
       page.data.map((item) => (
