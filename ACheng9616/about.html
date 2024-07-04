@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html app="help">
+<meta charset="utf-8">
+<title>文档 - AChengLinux - 可能是最萌的</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=1280">
+<link rel="stylesheet" href="static/css/i-1.css">
+<meta name="renderer" content="webkit"><meta http-equiv="Cache-Control" content="no-siteapp"><meta name="apple-mobile-web-app-title" content="AChengLinux"><meta name="google" value="notranslate">
+<style>
+table{
+	width: 100%;
+    margin-bottom: 20px;
+	max-width: 100%;
+    background-color: transparent;
+    border-collapse: collapse;
+    border-spacing: 0;
+        display: table;
+        border: 1px solid #ddd;
+    border-collapse: separate;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+thead{
+	    display: table-header-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+td{
+border-left: 1px solid #eee;
+    border-top: 1px solid #eee;
+        padding: 8px;
+    line-height: 20px;
+    text-align: left;
+    vertical-align: top;
+    border-top: 1px solid #ddd;
+}
+th{
+border-top: 1px solid #eee;
+}
+</style>
+<header class="a-fadeinT">
+	<div class="layout">
+		<a href="index.htm">
+			<h1>AChengLinux</h1>
+		</a>
+		<nav>
+			<!-- <a href="#/">资费</a> -->
+			<a href="#/qa">文档</a>
+			<a href="index.htm" class="login-link">首页</a>
+		</nav>
+	</div>
+</header>
+<h1 id="标题"></h1>
+<nav class="nav-box">
+	<a href="#/about">关于我</a>
+	<a href="#/qa">公告</a>
+	<a href="#/tos">希望与你一起游玩</a>
+	<a href="#/api">希望你能可乐每一天</a>
+</nav>
+<div class="main-box">
+	<div id="M" class="md-content layout"></div>
+</div>
+
+<footer>
+	<div class="htko">
+		<p>一切的开端，梦的延续</p>
+	</div>
+
+	<div class="layout">
+		<div class="l">
+			<a href="http://weibo.com/AChengLinux" target="_blank">BY AChengLinux</a>
+		</div>
+		<div class="r">
+		</div>
+	</div>
+</footer>
+
+<script src="static/js/itorr2.js"></script>
+<script src="static/js/q.js"></script>
+<script src="static/js/pagedown.converter.js"></script>
+<script>
+var 
+C=new Markdown.Converter();
+
+Q.reg('pop',function(view){
+	if(!view){
+		return;
+	}
+
+	var 
+	nav=document.querySelector('.nav-box a[href*="'+view+'"]');
+
+	if(!nav){
+		return;
+	}
+
+	var 
+	lastNav=document.querySelector('.nav-box a.active');
+
+	if(lastNav){
+		lastNav.classList.remove('active');
+	}
+
+	nav.classList.add('active');
+
+	标题.innerHTML=nav.innerHTML;
+
+}).reg('qa',function(){
+	M.innerHTML='<big>AChengLinux|Blog 于2024年3月8号正式创立</big>';
+	_.x('static/md/qa.md?6',function(r){
+		M.innerHTML=C.makeHtml(r);
+	});
+}).reg('??',function(){
+	M.innerHTML='<p class="text-banner">文档加载中。</p>';
+	_.x('static/md/api.md?7',function(r){
+		M.innerHTML=r;
+	});
+}).reg('tc',function(){
+	M.innerHTML='<p class="text-banner">文档加载中。</p>';
+	_.x('static/md/tc.md?5',function(r){
+		M.innerHTML=C.makeHtml(r);
+	});
+}).reg('tos',function(){
+	M.innerHTML='<p><big>与我一起游玩</big><p>1.我的世界Minecraft服务器生存，bb小镇QQ群：686199998</p>2.雾锁玩国,雾锁王国官方QQ④群957132178</p>';
+}).reg('about',function(){
+	M.innerHTML='<p><big>阿成（AChengLinux）</big><p>01年出生的普普通通的人，在社会受气，受打击的地方苟且存活，这是他在期间创造个人围脖，本站由AChengLinux独立运营</p>\
+	技术成员没有，从业工作时间超过 1年，具有贫穷的研发和运维经验。<br>\</p>';
+}).init({
+	index:'qa'
+});
+</script></html>
